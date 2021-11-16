@@ -165,6 +165,11 @@
 		}
 	}
 }
+.list-video {
+	.btn-banner {
+		padding-top: 70px;
+	}
+}
 .box-project {
 	padding: 100px 0;
 }
@@ -683,7 +688,7 @@
 		    margin-bottom: 12px;
 		}
 		h3 {
-			a {
+			a { 
 				display: block;
 			    font-size: 17px;
 			    font-weight: 700;
@@ -695,6 +700,216 @@
 	.viewmore {
 		a {
 			border-bottom: 1px solid;
+		}
+	}
+}
+.box-why {
+	padding: 100px 0;
+}
+
+.item-why {
+	height: 100%;
+	position: relative;
+	max-width: 289px;
+	height: 289px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:before {
+		content: "";
+		width: 289px;
+		height: 289px;
+		background: #FAFAFA;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 44px;
+		transform: rotate(47.89deg);
+		border: 3px solid;
+		border-image-source: linear-gradient(44.54deg, #F05623 15.59%, #FFFFFF 41.09%);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&:after {
+		content: "";
+		width: 289px;
+		height: 289px;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 44px;
+		transform: rotate(47.89deg);
+		border: 3px solid;
+		border-image-source: linear-gradient(44.54deg, #F05623 15.59%, #FFFFFF 41.09%);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.icon-why {
+	    margin: 0 auto; 
+	    width: 64px;
+	    height: 64px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    background: #fff;
+	    border-radius: 100%;
+	    border: 1px solid $yellow;
+	    position: relative;
+	    z-index: 1;
+	}
+	.info {
+		max-width: 240px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 1;
+		h3 {
+			line-height: initial;
+			padding: 20px 0 15px 0;
+			font-size: 20px;
+			font-weight: 600;
+		}
+	}
+}
+
+
+.box-feedback {
+	padding: 100px 0;
+}
+.item-fb {
+	max-width: 768px;
+	margin: 0 auto;
+	font-weight: 700;
+	color: #333333;
+	.desc {
+		margin-bottom: 40px;
+	}
+	.avr-fb {
+		margin-bottom: 30px;
+		img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+		}
+	}
+	h5 {
+		font-size: 15px;
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    margin-bottom: 10px;
+	}
+}
+
+.about-sub {
+	padding: 100px 0;
+	.title {
+		h2 {
+			margin: 0 0 30px 0;
+		}
+	}
+}
+.box-hiss {
+	font-size: 14px; 
+	padding-top: 70px;
+}
+.item-hist {
+	background: #FFFFFF;
+    box-shadow: 0px 4px 29px #00000073;
+    border-radius: 12px;
+    padding: 40px;
+    position: relative;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: -150px;
+    &:after {
+    	content: "";
+	    width: 12px;
+	    height: 12px;
+	    background: #333333;
+	    border-radius: 100%;
+	    position: absolute;
+	    top: 0;
+	    right: calc(-50px - 6px);
+	    z-index: 2;
+    }
+    &:before {
+    	content: "";
+    	width: calc(100% - 5px);
+    	height: calc(100% - 5px);
+    	border: 1px dashed $yellow;
+    	border-radius: 12px;
+    	position: absolute; 
+    	top: 0;
+    	right: 0;
+    }
+    h3 {
+    	font-size: 20px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    margin-bottom: 15px;
+	    line-height: initial;
+	    span {
+	    	position: relative;
+	    	&:after {
+	    		content: "";
+	    		width: 56px;
+	    		height: 1px;
+	    		background: $yellow;
+	    		top: 50%;
+	    		right: -65px;
+	    		position: absolute;
+	    	}
+	    }
+    }
+    table {
+    	width: 100%;
+    	line-height: 1.5;
+    	margin-bottom: 20px;
+    	th {
+    		font-weight: 600;
+		    border-bottom: 1px solid #A8A096;
+		    padding: 8px 10px;
+    	}
+    	td {
+		    border-bottom: 1px solid #A8A096;
+		    padding: 8px 10px;
+    	}
+    }
+}
+.list-hist {
+	position: relative;
+	&:after {
+		content: "";
+		width: 2px;
+		height: 100%;
+		background: #AEABAB;
+		position: absolute;
+		top: 0;
+		left: calc(50% - 1px);
+	}
+	.row {
+		margin: 0 -50px;
+		>div {
+			padding: 0 50px;
+		}
+	}
+	&:nth-child(2n) {
+		.col-md-6 {
+			&:first-child {
+				order: 2;
+			}
+			&:last-child {
+				order: 1;
+			}
+		}
+		.item-hist {
+			&:after {
+				right: unset;
+				left: calc(-50px - 6px);
+			}
+		}
+	}
+	&:first-child {
+		.item-hist {
+			margin-top: 0;
 		}
 	}
 }

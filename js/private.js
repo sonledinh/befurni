@@ -8,12 +8,23 @@ $('.slide-banner').slick({
     prevArrow: '', 
     nextArrow: '',
 });   
+
 $('.slide-part').slick({
     autoplay: false,
     arrow: false,
     dots: true,
     slidesToShow: 5,
     slidesToScroll: 3, 
+    prevArrow: '', 
+    nextArrow: '',
+});  
+
+$('.slide-feedback').slick({
+    autoplay: false,
+    arrow: false,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1, 
     prevArrow: '', 
     nextArrow: '',
 });  
