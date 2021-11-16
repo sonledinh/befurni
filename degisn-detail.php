@@ -3,23 +3,68 @@
 	<section class="breadcrumbs" style="background: url('images/bread.jpg') no-repeat center;background-size: cover;">
 		<div class="container">
 			<div class="info-bread text-center">
-				<h2>Tin tức</h2>
+				<h2>Thiết kế nội thất</h2>
 				<ul>
 					<li><a href="">Trang chủ</a></li>
-					<li><a href="">Tin tức</a></li>
+					<li><a href="">Thiết kế nội thất</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="box-detail">
-		<div class="container"> 
+		<div class="container">  
 			<div class="content-detail">
 				<div class="row">
 					<div class="col-md-9">
 						<div class="detail-top">
-							<div class="thumb-detail"><img src="images/thumb-detail.jpg" class="img-fluid w-100 " alt=""></div>
+							<!-- <div class="thumb-detail"><img src="images/thumb-detail.jpg" class="img-fluid w-100 " alt=""></div>  -->
+							<div class="slide-thumbs">
+								<div class="slider-for">
+                                    <div class="carousel-item">
+                                        <img src="images/thumb-detail.jpg" class="img-fluid lazy" width="100%" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/thumb-detail.jpg" class="img-fluid lazy" width="100%" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/thumb-detail.jpg" class="img-fluid lazy" width="100%" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/thumb-detail.jpg" class="img-fluid lazy" width="100%" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/thumb-detail.jpg" class="img-fluid lazy" width="100%" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/thumb-detail.jpg" class="img-fluid lazy" width="100%" alt="Third slide">
+                                    </div>
+                                </div>
+                                <div class="box-slide-nav">
+                                	<div class="slider-nav">
+	                                    <div class="clc">
+	                                     	<div class="item"><img class="lazy" src="images/thumb-1.jpg" width="100%" alt="Third slide"></div>
+	                                    </div>
+	                                    <div class="clc">
+	                                     	<div class="item"><img class="lazy" src="images/thumb-2.jpg" width="100%" alt="Third slide"></div>
+	                                    </div>
+	                                    <div class="clc">
+	                                     	<div class="item"><img class="lazy" src="images/thumb-1.jpg" width="100%" alt="Third slide"></div>
+	                                    </div>
+	                                    <div class="clc">
+	                                     	<div class="item"><img class="lazy" src="images/thumb-2.jpg" width="100%" alt="Third slide"></div>
+	                                    </div>
+	                                    <div class="clc">
+	                                     	<div class="item"><img class="lazy" src="images/thumb-1.jpg" width="100%" alt="Third slide"></div>
+	                                    </div>
+	                                    <div class="clc">
+	                                     	<div class="item"><img class="lazy" src="images/thumb-2.jpg" width="100%" alt="Third slide"></div>
+	                                    </div>
+	                                </div>
+                                </div>
+							</div>
 						</div>
-						<div class="detail">
+
+						<div class="detail"> 
 							<div class="title-degisn">
 								<h1>BIỆT THỰ VINHOME OCEAN PARK </h1>
 							</div>
