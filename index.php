@@ -67,7 +67,7 @@
 							</div>
 							<div class="info">
 								<h3><a href="">THIẾT KẾ kiến trúc</a></h3>
-								<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna, viverra leo feugiat </div>
+								<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis urna, viverra leo feugiat  </div>
 							</div>
 						</div>
 					</div>

@@ -34,7 +34,7 @@ $('.slider-for').slick({
     autoplay: false, 
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: true, 
     asNavFor: '.slider-nav',
 });
@@ -43,16 +43,14 @@ $('.slider-nav').slick({
     arrow:true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow: '<a href="javascript:void(0)"><img src="images/slide-left.png" class="img-fluid" alt=""></a>', 
-    nextArrow: '<a href="javascript:void(0)"><img src="images/slide-right.png" class="img-fluid" alt=""></a>',
+    prevArrow: '<a href="javascript:void(0)" class="arr-left"><img src="images/slide-left.png" class="img-fluid" alt=""></a>', 
+    nextArrow: '<a href="javascript:void(0)" class="arr-right"><img src="images/slide-right.png" class="img-fluid" alt=""></a>', 
     responsive: [
         {
             breakpoint: 1024, 
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 3,
-                infinite: true,
-                dots: true
             } 
         },
         {
@@ -73,8 +71,6 @@ $('.slider-nav').slick({
     asNavFor: '.slider-for',
     dots: false,
     focusOnSelect: true,
-    prevArrow: '', 
-    nextArrow: '', 
 });
 
 var dropdowns = $(".dropdown");

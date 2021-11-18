@@ -277,6 +277,10 @@ section {
   position: relative; }
   .box-banner .item-slide {
     position: relative; }
+  .box-banner .item-banner {
+    overflow: hidden; }
+    .box-banner .item-banner img {
+      animation: myscale 25s infinite; }
 
 .caption-banner {
   position: absolute;
@@ -328,8 +332,7 @@ section {
 
 .box-service {
   padding: 100px 0;
-  background: url("../images/bn-srv.png") no-repeat center;
-  background-size: contain; }
+  background: url("../images/bn-srv.png") no-repeat center; }
 
 .title {
   margin-bottom: 80px; }
@@ -348,7 +351,17 @@ section {
       left: 0; }
     .title h2 span {
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      background: linear-gradient(to right, #000000 0, #f05623 25%, #000000 50%);
+      background-position: -150px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-size-adjust: none;
+      -webkit-animation: shine 10s linear -1s infinite;
+      -o-animation: shine 10s linear -1s infinite;
+      animation: shine 10s linear -1s infinite;
+      animation-delay: -1s;
+      padding: 2px 0; }
 
 .item-srv {
   background: #FFFFFF;
@@ -361,6 +374,17 @@ section {
   height: 100%; }
   .item-srv:hover {
     top: -25px; }
+  .item-srv:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../images/svg-srv.png");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    pointer-events: none; }
   .item-srv .info {
     margin-top: -20px;
     position: relative;
@@ -412,7 +436,8 @@ section {
     display: block;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-transform: uppercase; }
 
 .list-video .btn-banner {
   padding-top: 70px; }
@@ -788,6 +813,14 @@ section {
     cursor: pointer; }
   .slide-thumbs .slider-nav img {
     border-radius: 6px; }
+  .slide-thumbs .slider-nav .slick-arrow {
+    position: absolute;
+    z-index: 2;
+    left: -45px;
+    top: calc(50% - 20px); }
+    .slide-thumbs .slider-nav .slick-arrow.arr-right {
+      left: unset;
+      right: -45px; }
 
 .box-slide-nav {
   padding: 0 50px; }
@@ -862,14 +895,13 @@ section {
     content: "";
     width: 289px;
     height: 289px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     border-radius: 44px;
-    transform: rotate(47.89deg);
-    border: 3px solid;
-    border-image-source: linear-gradient(44.54deg, #F05623 15.59%, #FFFFFF 41.09%);
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    background: url("../images/svg-why.png") no-repeat center center;
+    background-size: cover;
+    opacity: 0; }
   .item-why .icon-why {
     margin: 0 auto;
     width: 64px;
@@ -1003,5 +1035,20 @@ section {
     left: calc(-50px - 6px); }
   .list-hist:first-child .item-hist {
     margin-top: 0; }
+
+@keyframes myscale {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+@keyframes shine {
+  0% {
+    background-position: -150px; }
+  40% {
+    background-position: 500px; }
+  100% {
+    background-position: 650px; } }
 
 /*# sourceMappingURL=style.css.map */

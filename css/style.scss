@@ -1,3 +1,27 @@
 @import "layer.scss";
 @import "main.scss";
  
+
+@keyframes myscale {
+	0% {
+	    transform: scale(1);
+	}
+	50% {
+	    transform: scale(1.1);
+	}
+	100% {
+	    transform: scale(1);
+	}
+}
+
+@keyframes shine {
+	0% {
+	    background-position: -150px;
+	}
+	40% {
+	    background-position: 500px;
+	}
+	100% {
+	    background-position: 650px;
+	}
+}
